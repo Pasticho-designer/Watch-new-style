@@ -1,0 +1,40 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Alfa Slab One", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    user-select: none;
+    overflow: hidden;
+    background: conic-gradient(from 90deg at bottom right, cyan, rebeccapurple);
+}
+.contenedor {
+    width: 90vw;
+    height: 100vh;
+    margin: auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.watch {
+    border-radius: 14px;
+    display: flex;
+    gap: 25px;
+    padding: 30px;
+    font-size: 70px;
+    text-align: center;
+    color: rgb(31, 74, 153);
+    background:conic-gradient(at 0% 0%, snow, rgb(199, 199, 199));
+    box-shadow: 2px 5px 15px rgba(0, 0, 0, 0.26);
+}
+@media (max-width:580px) {
+    .watch {
+        flex-direction: column;
+    }
+    
+}
